@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper1{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    border: 3px solid grey;
+    margin: 0 auto;
+    top: 20vh;
+}
+.logo{
+    width: 40%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top:25%;
+    bottom: 25%;
+    border: 3px solid grey;
+}
+.logoBlack{
+    background: url(logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: hiddenLogoBlack 7s forwards;
+    border: 2px solid red;
+}
+.logoColor{
+    background: url(logoColor.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+    animation: logoColor 7s forwards;
+    border: 2px solid red;
+}
+
+@keyframes logoColor{
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+@keyframes hiddenLogoBlack{
+    100%{
+        visibility: hidden;
+    }
+}
